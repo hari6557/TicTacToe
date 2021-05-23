@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container-1">
+        <div id="header">
+            <h1 id="heading">Tic Tac Toe</h1>
+        </div>
+        <div class="container">
+            <input type="text" id="turn">
+            <div id="board">
+                
+                <table>
+                    <tr>
+                        <td><input type="button" class="row" id="b1" onclick="myFunc_1(); myFunc(); bell()" ;></td>
+                        <td><input type="button" class="row" id="b2" onclick="myFunc_2(); myFunc()" ;></td>
+                        <td><input type="button" class="row" id="b3" onclick="myFunc_3(); myFunc()" ;></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="row" id="b4" onclick="myFunc_4(); myFunc()" ;></td>
+                        <td><input type="button" class="row" id="b5" onclick="myFunc_5(); myFunc()" ;></td>
+                        <td><input type="button" class="row" id="b6" onclick="myFunc_6(); myFunc()" ;></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="row" id="b7" onclick="myFunc_7(); myFunc()" ;></td>
+                        <td><input type="button" class="row" id="b8" onclick="myFunc_8(); myFunc()" ;></td>
+                        <td><input type="button" class="row" id="b9" onclick="myFunc_9(); myFunc()" ;></td>
+                    </tr>
+                </table>
+                <audio id="audio"><source src="Mouse Click - Free Sound Effect.mp3" type="audio/mpeg"></audio>
+            </div>
+            <div>
+                
+                <input type="button" id="reset" value="Reset All" onclick="reset(); myFunc();">
+            </div>
+            <input type="text" disabled id="result">
+        </div>
+    </div>
+    
+</body>
+
+</html>
